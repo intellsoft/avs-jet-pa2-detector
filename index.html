@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ========== SEO 核心标签 ========== -->
+<title>راهنمای تعاملی برد سنسور JET PA2 | چشمی وزنی دزدگیر اماکن AVS</title>
+<meta name="description" content="راهنمای تعاملی و تصویری برد سنسور JET PA2 (چشمی وزنی دزدگیر اماکن). روی هر بخش برد کلیک کنید تا تنظیمات جامپر EOL آلارم و تامپر، تشخیص حیوانات خانگی، حساسیت PIR و کلید DIP را ببینید.">
+<meta name="keywords" content="JET PA2, چشمی وزنی, سنسور حرکتی دزدگیر, AVS Electronics, دزدگیر اماکن, سنسور PIR, راهنمای JET PA2, تنظیمات JET PA2, جامپر EOL, تشخیص حیوانات خانگی">
+<meta name="author" content="[نام شما یا نام برند شما]">
+<meta name="robots" content="index, follow">
+
+<!-- ========== Open Graph (اشتراک‌گذاری در شبکه‌های اجتماعی) ========== -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="راهنمای تعاملی برد سنسور JET PA2 | چشمی وزنی دزدگیر">
+<meta property="og:description" content="با کلیک روی هر بخش برد JET PA2، توضیحات کامل و تنظیمات آن را ببینید: جامپر EOL، تشخیص حیوانات خانگی، حساسیت PIR و کلید DIP.">
+<meta property="og:locale" content="fa_IR">
+<!-- <meta property="og:url" content="آدرس-گیت-هاب-شما"> -->
+<!-- <meta property="og:image" content="آدرس-تصویر-پیش‌نمایش"> -->
+
+<!-- ========== Twitter Card ========== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="راهنمای تعاملی برد سنسور JET PA2">
+<meta name="twitter:description" content="راهنمای تصویری و تعاملی تنظیمات چشمی وزنی JET PA2 برای دزدگیر اماکن.">
+
+<!-- ========== Structured Data (JSON-LD) ========== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "راهنمای تعاملی برد سنسور JET PA2",
+  "description": "راهنمای تصویری و تعاملی تنظیمات سخت‌افزاری چشمی وزنی JET PA2 شامل جامپر EOL، تشخیص حیوانات خانگی، حساسیت PIR و کلید DIP.",
+  "author": {
+    "@type": "Person",
+    "name": "[نام شما]",
+    "url": "[لینک سایت شما]"
+  },
+  "about": {
+    "@type": "Product",
+    "name": "JET PA2",
+    "description": "چشمی وزنی داخلی Dual PIR با برد ۱۵ متر و زاویه ۹۰ درجه، قابلیت تشخیص حیوانات خانگی تا ۲۴ کیلوگرم.",
+    "brand": {
+      "@type": "Brand",
+      "name": "AVS Electronics"
+    },
+    "manufacturer": {
+      "@type": "Organization",
+      "name": "AVS Electronics",
+      "url": "https://www.avselectronics.com"
+    }
+  }
+}
+</script>
+
+<!-- ========== استایل‌ها ========== -->
+<style>
+/* ---------- پایه ---------- */
+.jp2-wrap{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, Arial, sans-serif;
+  background:#f1f5f9;
+  border-radius:16px;
+  padding:22px;
+  color:#1e293b;
+  direction:rtl;
+  text-align:right;
+  box-sizing:border-box;
+  line-height:1.7;
+  max-width:1280px;
+  margin:0 auto;
+}
+.jp2-wrap *,.jp2-wrap *::before,.jp2-wrap *::after{box-sizing:border-box}
+
+/* ---------- هدر ---------- */
+.jp2-header h1,
+.jp2-header h2{margin:0 0 6px;font-size:20px;color:#0f172a;font-weight:800}
+.jp2-header p{margin:0 0 18px;font-size:13.5px;color:#64748b}
+
+/* ---------- چیدمان اصلی ---------- */
+.jp2-main{display:grid;grid-template-columns:1fr 380px;gap:18px;align-items:start}
+@media(max-width:900px){.jp2-main{grid-template-columns:1fr}}
+
+/* ---------- قاب برد ---------- */
+.jp2-board-box{
+  background:#fff;border:1px solid #e2e8f0;border-radius:14px;
+  padding:10px;box-shadow:0 4px 16px rgba(15,23,42,.06);
+}
+.jp2-board-box svg{display:block;width:100%;height:auto;user-select:none}
+
+/* ---------- پنل کناری ---------- */
+.jp2-panel{
+  background:#fff;border:1px solid #e2e8f0;border-radius:14px;
+  padding:16px;box-shadow:0 4px 16px rgba(15,23,42,.06);min-height:260px;
+}
+
+/* ---------- نقاط تعاملی ---------- */
+.jp2-hotspot{cursor:pointer;outline:none}
+.jp2-hotspot .jp2-hl{
+  fill:transparent;transition:fill .18s,stroke .18s;
+  stroke:transparent;stroke-width:2;stroke-dasharray:5 4;
+}
+.jp2-hotspot:hover .jp2-hl{fill:rgba(37,99,235,.12);stroke:#2563eb}
+.jp2-hotspot.jp2-active .jp2-hl{fill:rgba(37,99,235,.2);stroke:#2563eb}
+.jp2-hotspot:focus-visible .jp2-hl{stroke:#2563eb;fill:rgba(37,99,235,.14)}
+
+/* ---------- ابزارنمایی شناور ---------- */
+.jp2-tip{
+  position:fixed;z-index:99999;pointer-events:none;
+  background:#0f172a;color:#f8fafc;
+  padding:9px 13px;border-radius:9px;
+  font-size:13px;max-width:270px;line-height:1.6;
+  opacity:0;transform:translateY(4px);
+  transition:opacity .15s,transform .15s;
+  box-shadow:0 10px 28px rgba(0,0,0,.3);
+  font-family:inherit;
+}
+.jp2-tip.jp2-show{opacity:1;transform:translateY(0)}
+.jp2-tip b{display:block;font-size:12.5px;margin-bottom:3px;color:#7dd3fc;font-weight:700}
+
+/* ---------- حالت خالی پنل ---------- */
+.jp2-empty{text-align:center;padding:36px 10px;color:#64748b}
+.jp2-empty-icon{font-size:34px;margin-bottom:10px}
+.jp2-empty-t{font-size:14px;font-weight:700;color:#334155;margin-bottom:5px}
+.jp2-empty-d{font-size:12.5px;color:#94a3b8}
+
+/* ---------- سر پنل ---------- */
+.jp2-p-head{border-bottom:1px solid #eef2f7;padding-bottom:10px;margin-bottom:12px}
+.jp2-p-tag{
+  display:inline-block;font-size:11px;font-weight:700;
+  color:#2563eb;background:#eff6ff;padding:2px 9px;border-radius:999px;margin-bottom:7px;
+}
+.jp2-p-title{font-size:16px;font-weight:800;color:#0f172a}
+
+/* ---------- بدنه پنل ---------- */
+.jp2-p-body{font-size:13px;color:#475569;line-height:1.85}
+.jp2-p-body p{margin:0 0 9px}
+.jp2-p-body ul{margin:0 0 9px;padding-right:18px}
+.jp2-p-body li{margin-bottom:5px}
+.jp2-p-body b{color:#0f172a}
+.jp2-note{
+  background:#fffbeb;border-right:3px solid #f59e0b;
+  padding:8px 10px;border-radius:6px;font-size:12.5px;color:#92400e;margin-top:8px !important;
+}
+
+/* ---------- گزینه‌ها ---------- */
+.jp2-p-opts-title{font-size:12px;font-weight:700;color:#64748b;margin:14px 0 8px}
+.jp2-p-opts{display:flex;flex-direction:column;gap:6px}
+.jp2-opt{
+  display:flex;align-items:center;gap:10px;width:100%;
+  background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:9px;
+  padding:8px 11px;cursor:pointer;transition:all .15s;
+  font-family:inherit;text-align:right;color:#334155;
+}
+.jp2-opt:hover{border-color:#93c5fd;background:#f0f9ff}
+.jp2-opt.jp2-on{border-color:#2563eb;background:#eff6ff;box-shadow:0 0 0 2px rgba(37,99,235,.12)}
+.jp2-opt-l{
+  font-family:monospace;font-size:12px;font-weight:700;
+  background:#0f172a;color:#f8fafc;padding:3px 8px;border-radius:6px;
+  min-width:52px;text-align:center;flex-shrink:0;
+}
+.jp2-opt.jp2-on .jp2-opt-l{background:#2563eb}
+.jp2-opt-n{font-size:12.5px;font-weight:600}
+
+/* ---------- حالت فعلی ---------- */
+.jp2-p-cur{
+  margin-top:12px;background:#f0fdf4;border-right:3px solid #22c55e;
+  padding:9px 11px;border-radius:6px;font-size:12.5px;color:#166534;line-height:1.7;
+}
+.jp2-p-cur b{color:#14532d}
+
+/* ---------- ===== بنر معرفی سازنده (اختصاصی شما) ===== */
+.jp2-author{
+  grid-column:1 / -1;                 /* در دسکتاپ زیر برد و پنل، تمام عرض */
+  margin-top:6px;
+  background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);
+  border-radius:14px;
+  padding:22px 26px;
+  color:#e2e8f0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+  box-shadow:0 6px 24px rgba(15,23,42,.18);
+}
+.jp2-author-txt{flex:1;min-width:220px}
+.jp2-author-txt h3{
+  margin:0 0 6px;font-size:16px;font-weight:800;color:#f8fafc;
+}
+.jp2-author-txt p{
+  margin:0;font-size:13px;line-height:1.75;color:#94a3b8;max-width:640px;
+}
+.jp2-author-txt p b{color:#7dd3fc;font-weight:700}
+.jp2-author-btn{
+  display:inline-flex;align-items:center;gap:7px;
+  background:#2563eb;color:#fff;text-decoration:none;
+  font-size:13px;font-weight:700;
+  padding:10px 20px;border-radius:9px;
+  white-space:nowrap;flex-shrink:0;
+  transition:background .18s,transform .18s;
+}
+.jp2-author-btn:hover{background:#1d4ed8;transform:translateY(-1px)}
+.jp2-author-btn svg{width:16px;height:16px;fill:currentColor}
+@media(max-width:600px){
+  .jp2-author{flex-direction:column;align-items:flex-start;text-align:right}
+  .jp2-author-btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<div class="jp2-wrap" dir="rtl">
+  <!-- ========== هدر ========== -->
+  <div class="jp2-header">
+    <h1>راهنمای تعاملی برد سنسور JET PA2</h1>
+    <p>موس را روی هر بخش از برد ببرید تا توضیح کوتاه آن را ببینید، و با کلیک یا لمس، توضیحات کامل و تنظیمات آن بخش را در پنل کنار مشاهده کنید.</p>
+  </div>
+
+  <!-- ========== چیدمان اصلی ========== -->
+  <div class="jp2-main">
+    <!-- ---------- برد SVG ---------- -->
+    <div class="jp2-board-box">
+      <svg id="jp2-svg" viewBox="0 0 800 850" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="برد سنسور JET PA2">
+        <defs>
+          <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+            <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+          </filter>
+        </defs>
+
+        <!-- ===== BOARD BACKGROUND ===== -->
+        <rect x="150" y="40" width="500" height="770" rx="15" fill="#fdfdfd" stroke="#d0d0d0" stroke-width="2" filter="url(#shadow)"/>
+
+        <!-- Mounting Holes -->
+        <g fill="#eae4d3" stroke="#cdc4ad" stroke-width="1.5">
+          <circle cx="180" cy="70" r="7"/>
+          <circle cx="620" cy="70" r="7"/>
+          <circle cx="180" cy="780" r="7"/>
+          <circle cx="620" cy="780" r="7"/>
+        </g>
+
+        <!-- ===== TERMINAL BLOCK ===== -->
+        <g class="jp2-hotspot jp2-active" data-part="terminal" tabindex="0" role="button" aria-label="ترمینال‌های اتصال">
+          <g font-size="11" fill="#5b6b78" text-anchor="middle" font-family="monospace" font-weight="bold">
+            <text x="235" y="60">12V DC</text>
+            <text x="385" y="60">ALARM</text>
+            <text x="535" y="60">TAMPER</text>
+          </g>
+          <rect x="195" y="70" width="380" height="40" rx="5" fill="#4CAF50" stroke="#388E3C" stroke-width="2"/>
+          <g fill="#E0E0E0" stroke="#9E9E9E" stroke-width="1.5">
+            <circle cx="210" cy="90" r="12"/>
+            <circle cx="260" cy="90" r="12"/>
+            <circle cx="310" cy="90" r="12"/>
+            <circle cx="360" cy="90" r="12"/>
+            <circle cx="410" cy="90" r="12"/>
+            <circle cx="460" cy="90" r="12"/>
+            <circle cx="510" cy="90" r="12"/>
+            <circle cx="560" cy="90" r="12"/>
+          </g>
+          <g stroke="#757575" stroke-width="1.5">
+            <line x1="205" y1="90" x2="215" y2="90"/>
+            <line x1="255" y1="90" x2="265" y2="90"/>
+            <line x1="305" y1="90" x2="315" y2="90"/>
+            <line x1="355" y1="90" x2="365" y2="90"/>
+            <line x1="405" y1="90" x2="415" y2="90"/>
+            <line x1="455" y1="90" x2="465" y2="90"/>
+            <line x1="505" y1="90" x2="515" y2="90"/>
+            <line x1="555" y1="90" x2="565" y2="90"/>
+          </g>
+          <g font-size="10" fill="#333" text-anchor="middle" font-family="monospace" font-weight="bold">
+            <text x="210" y="125">-</text>
+            <text x="260" y="125">+</text>
+            <text x="310" y="125">LED</text>
+            <text x="360" y="125">NC</text>
+            <text x="410" y="125">C</text>
+            <text x="460" y="125">TEOL</text>
+            <text x="510" y="125">NC</text>
+            <text x="560" y="125">C</text>
+          </g>
+          <rect class="jp2-hl" x="195" y="70" width="380" height="40" rx="5"/>
+        </g>
+
+        <!-- ===== EOL ALARM ===== -->
+        <g class="jp2-hotspot" data-part="eolAlarm" tabindex="0" role="button" aria-label="جامپر EOL آلارم">
+          <text x="250" y="165" font-size="11" fill="#7c8a99" text-anchor="middle" font-family="monospace" font-weight="bold">EOL ALARM</text>
+          <rect x="210" y="175" width="80" height="30" rx="4" fill="#FDD835" stroke="#F9A825" stroke-width="2"/>
+          <g fill="#BDBDBD">
+            <rect x="217" y="185" width="6" height="10" rx="1"/>
+            <rect x="233" y="185" width="6" height="10" rx="1"/>
+            <rect x="249" y="185" width="6" height="10" rx="1"/>
+            <rect x="265" y="185" width="6" height="10" rx="1"/>
+            <rect x="281" y="185" width="6" height="10" rx="1"/>
+          </g>
+          <rect class="jp2-cap-eolAlarm" x="265" y="183" width="18" height="14" rx="3" fill="#FFB300" stroke="#E65100" stroke-width="1.5"/>
+          <rect class="jp2-hl" x="210" y="175" width="80" height="30" rx="4"/>
+        </g>
+
+        <!-- ===== EOL TAMPER ===== -->
+        <g class="jp2-hotspot" data-part="eolTamper" tabindex="0" role="button" aria-label="جامپر EOL تامپر">
+          <text x="500" y="165" font-size="11" fill="#7c8a99" text-anchor="middle" font-family="monospace" font-weight="bold">EOL TAMPER</text>
+          <rect x="460" y="175" width="80" height="30" rx="4" fill="#42A5F5" stroke="#1E88E5" stroke-width="2"/>
+          <g fill="#BDBDBD">
+            <rect x="467" y="185" width="6" height="10" rx="1"/>
+            <rect x="483" y="185" width="6" height="10" rx="1"/>
+            <rect x="499" y="185" width="6" height="10" rx="1"/>
+            <rect x="515" y="185" width="6" height="10" rx="1"/>
+            <rect x="531" y="185" width="6" height="10" rx="1"/>
+          </g>
+          <rect class="jp2-cap-eolTamper" x="467" y="183" width="18" height="14" rx="3" fill="#1E88E5" stroke="#0D47A1" stroke-width="1.5"/>
+          <rect class="jp2-hl" x="460" y="175" width="80" height="30" rx="4"/>
+        </g>
+
+        <!-- ===== S1 DIP Switch ===== -->
+        <g class="jp2-hotspot" data-part="s1" tabindex="0" role="button" aria-label="کلید DIP">
+          <text x="345" y="280" font-size="11" fill="#7c8a99" text-anchor="end" font-family="monospace" font-weight="bold">S1</text>
+          <rect x="355" y="240" width="50" height="70" rx="4" fill="#66BB6A" stroke="#43A047" stroke-width="2"/>
+          <g fill="#BDBDBD">
+            <rect x="367" y="250" width="26" height="10" rx="2"/>
+            <rect x="367" y="275" width="26" height="10" rx="2"/>
+            <rect x="367" y="300" width="26" height="10" rx="2"/>
+          </g>
+          <g font-size="9" fill="#333" font-family="monospace" text-anchor="start">
+            <text x="397" y="258">1</text>
+            <text x="397" y="283">2</text>
+            <text x="397" y="308">3</text>
+          </g>
+          <rect class="jp2-cap-s1" x="364" y="297" width="32" height="16" rx="3" fill="#FFB300" stroke="#E65100" stroke-width="1.5"/>
+          <rect class="jp2-hl" x="355" y="240" width="50" height="70" rx="4"/>
+        </g>
+
+        <!-- ===== LED JMP ===== -->
+        <g class="jp2-hotspot" data-part="ledJmp" tabindex="0" role="button" aria-label="جامپر تعیین وضعیت LED">
+          <text x="380" y="350" font-size="11" fill="#7c8a99" text-anchor="middle" font-family="monospace" font-weight="bold">LED JMP</text>
+          <rect x="330" y="360" width="100" height="30" rx="4" fill="#AB47BC" stroke="#8E24AA" stroke-width="2"/>
+          <g fill="#BDBDBD">
+            <rect x="345" y="370" width="6" height="10" rx="1"/>
+            <rect x="377" y="370" width="6" height="10" rx="1"/>
+            <rect x="409" y="370" width="6" height="10" rx="1"/>
+          </g>
+          <g font-size="9" fill="#fff" font-family="monospace" text-anchor="middle">
+            <text x="348" y="395">OFF</text>
+            <text x="412" y="395">ON</text>
+          </g>
+          <rect class="jp2-cap-ledJmp" x="376" y="368" width="18" height="14" rx="3" fill="#FFB300" stroke="#E65100" stroke-width="1.5"/>
+          <rect class="jp2-hl" x="330" y="360" width="100" height="30" rx="4"/>
+        </g>
+
+        <!-- ===== LED Component ===== -->
+        <g class="jp2-hotspot" data-part="leds" tabindex="0" role="button" aria-label="LED های وضعیت">
+          <circle cx="380" cy="420" r="15" fill="#EF5350" stroke="#B71C1C" stroke-width="2"/>
+          <circle cx="380" cy="420" r="8" fill="#FFCDD2"/>
+          <text x="380" y="455" font-size="10" fill="#7c8a99" text-anchor="middle" font-family="monospace" font-weight="bold">LED</text>
+          <circle class="jp2-hl" cx="380" cy="420" r="20"/>
+        </g>
+
+        <!-- ===== PIR SENSOR ===== -->
+        <g class="jp2-hotspot" data-part="pir" tabindex="0" role="button" aria-label="سنسور PIR">
+          <rect x="340" y="480" width="80" height="80" rx="10" fill="#e0e0e0" stroke="#b0b0b0" stroke-width="2"/>
+          <circle cx="380" cy="520" r="30" fill="#f5f5f5" stroke="#ccc" stroke-width="2"/>
+          <circle cx="380" cy="520" r="15" fill="#ddd" stroke="#bbb" stroke-width="1.5"/>
+          <text x="380" y="580" font-size="10" fill="#5b6b78" text-anchor="middle" font-family="monospace" font-weight="bold">PIR</text>
+          <rect class="jp2-hl" x="340" y="480" width="80" height="80" rx="10"/>
+        </g>
+
+        <!-- ===== RIGHT SIDE COLUMN ===== -->
+        <!-- Temperature Compensation Sensor -->
+        <g class="jp2-hotspot" data-part="tempSensor" tabindex="0" role="button" aria-label="سنسور جبران دمای محیط">
+          <text x="460" y="230" font-size="11" fill="#7c8a99" text-anchor="middle" font-family="monospace" font-weight="bold">TEMP</text>
+          <rect x="435" y="240" width="50" height="50" rx="25" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="2"/>
+          <circle cx="460" cy="265" r="15" fill="#BDBDBD" stroke="#757575" stroke-width="1.5"/>
+          <line x1="450" y1="265" x2="470" y2="265" stroke="#757575" stroke-width="2"/>
+          <line x1="460" y1="255" x2="460" y2="275" stroke="#757575" stroke-width="2"/>
+          <rect class="jp2-hl" x="435" y="240" width="50" height="50" rx="25"/>
+        </g>
+
+        <!-- J1 -->
+        <g class="jp2-hotspot" data-part="j1" tabindex="0" role="button" aria-label="جامپر J1">
+          <text x="550" y="230" font-size="11" fill="#7c8a99" text-anchor="middle" font-family="monospace" font-weight="bold">J1</text>
+          <rect x="525" y="240" width="50" height="50" rx="4" fill="#FDD835" stroke="#F9A825" stroke-width="2"/>
+          <g fill="#BDBDBD">
+            <rect x="537" y="250" width="26" height="10" rx="2"/>
+            <rect x="537" y="275" width="26" height="10" rx="2"/>
+          </g>
+          <g font-size="10" fill="#333" font-family="monospace" text-anchor="end" font-weight="bold">
+            <text x="568" y="258">1P</text>
+            <text x="568" y="283">2P</text>
+          </g>
+          <rect class="jp2-cap-j1" x="534" y="272" width="32" height="16" rx="3" fill="#FFB300" stroke="#E65100" stroke-width="1.5"/>
+          <rect class="jp2-hl" x="525" y="240" width="50" height="50" rx="4"/>
+        </g>
+
+        <!-- TAMPER SWITCH -->
+        <g class="jp2-hotspot" data-part="tamperSw" tabindex="0" role="button" aria-label="کلید تامپر">
+          <rect x="460" y="350" width="100" height="120" rx="6" fill="#A1887F" stroke="#795548" stroke-width="2"/>
+          <rect x="480" y="370" width="60" height="80" rx="4" fill="#D7CCC8" stroke="#8D6E63" stroke-width="1.5"/>
+          <rect x="495" y="395" width="30" height="30" rx="3" fill="#BCAAA4" stroke="#8D6E63" stroke-width="1.5"/>
+          <text x="510" y="435" font-size="12" fill="#4E342E" text-anchor="middle" font-family="monospace" font-weight="bold">TAMPER</text>
+          <rect class="jp2-hl" x="460" y="350" width="100" height="120" rx="6"/>
+        </g>
+
+        <!-- PIR ADJ Potentiometer -->
+        <g class="jp2-hotspot" data-part="pirAdj" tabindex="0" role="button" aria-label="تنظیم حساسیت PIR">
+          <rect x="460" y="500" width="100" height="60" rx="6" fill="#66BB6A" stroke="#43A047" stroke-width="2"/>
+          <circle cx="510" cy="530" r="22" fill="#E0E0E0" stroke="#9E9E9E" stroke-width="2"/>
+          <g class="jp2-knob-pirAdj" transform="rotate(0 510 530)">
+            <line x1="510" y1="530" x2="510" y2="512" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="510" cy="530" r="4" fill="#333"/>
+          </g>
+          <text x="510" y="575" font-size="12" fill="#1B5E20" text-anchor="middle" font-family="monospace" font-weight="bold">PIR ADJ</text>
+          <rect class="jp2-hl" x="460" y="500" width="100" height="60" rx="6"/>
+        </g>
+
+        <!-- ===== J3 J4 J5 (PET IMMUNITY) ===== -->
+        <g class="jp2-hotspot" data-part="pet" tabindex="0" role="button" aria-label="جامپر تشخیص حیوانات خانگی">
+          <text x="270" y="600" font-size="11" fill="#7c8a99" text-anchor="middle" font-family="monospace" font-weight="bold">J3 J4 J5</text>
+          <rect x="190" y="610" width="160" height="45" rx="4" fill="#EF5350" stroke="#C62828" stroke-width="2"/>
+          <g fill="#BDBDBD">
+            <rect x="205" y="620" width="15" height="25" rx="2"/>
+            <rect x="225" y="620" width="15" height="25" rx="2"/>
+            <rect x="245" y="620" width="15" height="25" rx="2"/>
+            <rect x="265" y="620" width="15" height="25" rx="2"/>
+            <rect x="285" y="620" width="15" height="25" rx="2"/>
+            <rect x="305" y="620" width="15" height="25" rx="2"/>
+          </g>
+          <g font-size="9" fill="#fff" font-family="monospace" text-anchor="middle">
+            <text x="212" y="635">24KG</text>
+            <text x="252" y="635">12KG</text>
+            <text x="292" y="635">بدون</text>
+          </g>
+          <rect class="jp2-cap-pet1" x="201" y="618" width="25" height="29" rx="3" fill="#FFB300" stroke="#E65100" stroke-width="1.5"/>
+          <rect class="jp2-cap-pet2" x="221" y="618" width="25" height="29" rx="3" fill="#FFB300" stroke="#E65100" stroke-width="1.5"/>
+          <rect class="jp2-cap-pet3" x="241" y="618" width="25" height="29" rx="3" fill="#FFB300" stroke="#E65100" stroke-width="1.5"/>
+          <rect class="jp2-hl" x="190" y="610" width="160" height="45" rx="4"/>
+        </g>
+
+        <!-- ===== ANNOTATIONS ===== -->
+        <g fill="none" stroke="#333" stroke-width="1.5" stroke-dasharray="6,4">
+          <line x1="160" y1="190" x2="210" y2="190"/>
+          <line x1="160" y1="420" x2="365" y2="420"/>
+          <line x1="160" y1="632" x2="190" y2="632"/>
+          <line x1="660" y1="190" x2="460" y2="190" stroke="#1E88E5"/>
+          <line x1="660" y1="320" x2="550" y2="320"/>
+          <line x1="660" y1="410" x2="560" y2="410"/>
+          <line x1="660" y1="530" x2="560" y2="530"/>
+        </g>
+
+        <!-- Text Annotations -->
+        <g font-size="12" fill="#333" font-family="Tahoma, Arial, sans-serif" font-weight="bold">
+          <text x="155" y="185" text-anchor="end">مقاومت EOL جهت خروجی</text>
+          <text x="155" y="200" text-anchor="end">Alarm</text>
+          <text x="155" y="415" text-anchor="end">LED تعیین وضعیت</text>
+          <text x="155" y="430" text-anchor="end">LED</text>
+          <text x="155" y="625" text-anchor="end">تعیین میزان حساسیت برای</text>
+          <text x="155" y="640" text-anchor="end">تشخیص حیوانات خانگی</text>
+          <text x="665" y="185" text-anchor="start" fill="#1E88E5">مقاومت EOL جهت خروجی</text>
+          <text x="665" y="200" text-anchor="start" fill="#1E88E5">Tamper</text>
+          <text x="665" y="315" text-anchor="start">تعیین اعلام آلارم با یک</text>
+          <text x="665" y="330" text-anchor="start">حرکت و یا دو حرکت</text>
+          <text x="665" y="405" text-anchor="start">کلید اعلام بازشدن درب سنسور</text>
+          <text x="665" y="525" text-anchor="start">تنظیم حساسیت PIR</text>
+          <text x="665" y="540" text-anchor="start">(با احتیاط استفاده شود)</text>
+        </g>
+
+        <!-- Board Label -->
+        <text x="630" y="780" text-anchor="end" font-size="36" font-weight="900" fill="#ddd5bf" font-family="Arial, sans-serif">B</text>
+      </svg>
+    </div>
+
+    <!-- ---------- پنل توضیحات ---------- -->
+    <aside class="jp2-panel" id="jp2-panel">
+      <div class="jp2-empty">
+        <div class="jp2-empty-icon">👆</div>
+        <div class="jp2-empty-t">برای شروع، روی یکی از اجزای برد کلیک کنید</div>
+        <div class="jp2-empty-d">با بردن موس روی هر بخش، توضیح کوتاه آن نمایش داده می‌شود.</div>
+      </div>
+    </aside>
+
+    <!-- ========== بنر معرفی سازنده (اختصاصی) ========== -->
+    <div class="jp2-author" id="jp2-author">
+      <div class="jp2-author-txt">
+        <h3>این ابزار تعاملی را من ساخته‌ام</h3>
+        <p>
+          اگر به ساخت <b>ابزارهای تعاملی مشابه</b> برای محصولات فنی، تجهیزات، آموزش یا هر نیاز دیگری دارید،
+          می‌توانید از طریق سایت من با من در ارتباط باشید. این راهنماها را طوری طراحی می‌کنم که
+          <b>مستقیم قابل استفاده در وب و گیت‌هاب</b> باشند.
+        </p>
+      </div>
+      <a class="jp2-author-btn" href="https://intellsoft.ir/" target="_blank" >
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        مشاهده سایت من و نمونه‌کارها
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ========== ابزارنمایی شناور ========== -->
+<div class="jp2-tip" id="jp2-tip" aria-hidden="true"></div>
+
+<!-- ========== اسکریپت تعاملات (بدون تغییر در منطق اصلی) ========== -->
+<script>
+(function(){
+  'use strict';
+  var root = document.querySelector('.jp2-wrap');
+  if(!root) return;
+
+  var svg = root.querySelector('#jp2-svg');
+  var panel = root.querySelector('#jp2-panel');
+  var tip = root.querySelector('#jp2-tip');
+  var currentKey = null;
+
+  var state = {
+    eolAlarm: 0,
+    eolTamper: 0,
+    pet: 0,
+    s1: 0,
+    ledJmp: 0,
+    j1: 1,
+    pirAdj: 1
+  };
+
+  var PARTS = {
+    terminal: {
+      tag: 'اتصال',
+      title: 'ترمینال‌های اتصال',
+      short: 'ورودی ۱۲ ولت و خروجی‌های رله',
+      body: '<p>این بلوک ۸ پیچه، رابط اصلی برد با سیستم مرکزی (زون / پنل) است. هر پیچ یک سیگنال را منتقل می‌کند:</p><ul>' +
+            '<li><b>12V DC (- و +)</b> — ورودی تغذیه برد (۱۲ ولت DC). رعایت قطب مثبت و منفی الزامی است.</li>' +
+            '<li><b>ALARM (LED, NC, C, TEOL)</b> — خروجی رله آلارم؛ با تشخیص حرکت فعال می‌شود. پایه LED برای اتصال به نشانگر وضعیت، پایه‌های NC و C کنتاکت‌های رله و TEOL برای مقاومت انتهای خط.</li>' +
+            '<li><b>TAMPER (NC, C)</b> — اتصال کلید تامپر؛ در صورت باز شدن درب بدنه، مدار قطع/بسته می‌شود.</li>' +
+            '</ul><p class="jp2-note">مقاومت انتهای خط (EOL) از طریق جامپرهای مجاور (EOL ALARM / EOL TAMPER) قابل انتخاب است.</p>'
+    },
+
+    eolAlarm: {
+      tag: 'تنظیم',
+      title: 'جامپر EOL آلارم',
+      short: 'انتخاب مقاومت انتهای خط برای خروجی آلارم',
+      body: '<p>با جابه‌جایی این جامپر، مقاومت انتهای خط (End Of Line) روی خروجی آلارم قرار می‌گیرد. مقدار مقاومت باید با پنل مرکزی هماهنگ باشد.</p>',
+      options: [
+        { label:'N.C.', name:'بدون مقاومت', desc:'خروجی آلارم به صورت کنتاکت خشک (رله بدون مقاومت) عمل می‌کند. برای پنل‌هایی که EOL نمی‌خواهند.' },
+        { label:'1kΩ', name:'مقاومت ۱ کیلواهم', desc:'مناسب پنل‌هایی که مقدار EOL آن‌ها ۱ کیلواهم است.' },
+        { label:'2.2kΩ', name:'مقاومت ۲٫۲ کیلواهم', desc:'مناسب پنل‌هایی که مقدار EOL آن‌ها ۲٫۲ کیلواهم است.' },
+        { label:'4.7kΩ', name:'مقاومت ۴٫۷ کیلواهم', desc:'مناسب پنل‌هایی که مقدار EOL آن‌ها ۴٫۷ کیلواهم است.' },
+        { label:'10kΩ', name:'مقاومت ۱۰ کیلواهم', desc:'مناسب پنل‌هایی که مقدار EOL آن‌ها ۱۰ کیلواهم است.' }
+      ]
+    },
+
+    eolTamper: {
+      tag: 'تنظیم',
+      title: 'جامپر EOL تامپر',
+      short: 'انتخاب مقاومت انتهای خط برای خروجی تامپر',
+      body: '<p>این جامپر مقدار مقاومت انتهای خط (EOL) روی خروجی تامپر را تعیین می‌کند. مقدار باید مطابق پنل مرکزی انتخاب شود.</p>',
+      options: [
+        { label:'N.C.', name:'بدون مقاومت', desc:'خروجی تامپر به صورت کنتاکت خشک (بدون مقاومت) عمل می‌کند.' },
+        { label:'1kΩ', name:'مقاومت ۱ کیلواهم', desc:'مناسب پنل‌هایی که EOL تامپر آن‌ها ۱ کیلواهم است.' },
+        { label:'2.2kΩ', name:'مقاومت ۲٫۲ کیلواهم', desc:'مناسب پنل‌هایی که EOL تامپر آن‌ها ۲٫۲ کیلواهم است.' },
+        { label:'4.7kΩ', name:'مقاومت ۴٫۷ کیلواهم', desc:'مناسب پنل‌هایی که EOL تامپر آن‌ها ۴٫۷ کیلواهم است.' },
+        { label:'10kΩ', name:'مقاومت ۱۰ کیلواهم', desc:'مناسب پنل‌هایی که EOL تامپر آن‌ها ۱۰ کیلواهم است.' }
+      ]
+    },
+
+    pet: {
+      tag: 'تنظیم',
+      title: 'جامپر تشخیص حیوانات خانگی (J3, J4, J5)',
+      short: 'ایمنی نسبت به حیوانات خانگی تا ۲۴ کیلوگرم',
+      body: '<p>سنسور JET PA2 با تکنولوژی Dual PIR و آنالیز دقیق، می‌تواند حیوانات خانگی را از حرکت انسان تشخیص دهد. با این جامپرها، وزن تقریبی حیوان مجاز را انتخاب کنید.</p>',
+      options: [
+        { label:'24KG', name:'حیوانات تا ۲۴ کیلوگرم', desc:'مناسب سگ‌های متوسط؛ سنسور حرکات حیوان را نادیده می‌گیرد اما انسان را تشخیص می‌دهد.' },
+        { label:'12KG', name:'حیوانات تا ۱۲ کیلوگرم', desc:'مناسب حیوانات خانگی کوچک مانند گربه‌ها و سگ‌های کوچک.' },
+        { label:'بدون', name:'بدون تشخیص حیوان', desc:'حالت پیش‌فرض کارخانه؛ سنسور هیچ حیوانی را نادیده نمی‌گیرد و هر حرکتی را آلارم می‌کند.' }
+      ]
+    },
+
+    s1: {
+      tag: 'تنظیم',
+      title: 'کلید DIP (S1)',
+      short: 'تعیین وضعیت خروجی Tamper و Alarm',
+      body: '<p>این کلید DIP سه حالته برای تعیین وضعیت خروجی‌های Tamper و Alarm به کار می‌رود. بسته به نوع پنل مرکزی، می‌توانید خروجی‌ها را مجزا یا سری کنید.</p>' +
+            '<p class="jp2-note">برای جزئیات دقیق، به دفترچه فنی دستگاه مراجعه کنید.</p>',
+      options: [
+        { label:'OFF', name:'حالت ۱', desc:'خروجی‌های Tamper و Alarm به صورت مجزا عمل می‌کنند.' },
+        { label:'ON', name:'حالت ۲', desc:'خروجی‌های Tamper و Alarm با هم سری می‌شوند.' },
+        { label:'TEST', name:'حالت تست', desc:'حالت تست برای راه‌اندازی و بررسی سریع سنسور.' }
+      ]
+    },
+
+    ledJmp: {
+      tag: 'تنظیم',
+      title: 'جامپر تعیین وضعیت LED',
+      short: 'انتخاب حالت روشن/خاموش LED',
+      body: '<p>این جامپر سه حالته برای تعیین وضعیت LED نشانگر روی برد استفاده می‌شود. با جابه‌جایی آن می‌توانید LED را روشن یا خاموش کنید.</p>' +
+            '<p class="jp2-note">تنها حالت سمت راست (ON) و حالت سمت چپ (OFF) معتبر هستند.</p>',
+      options: [
+        { label:'OFF', name:'LED خاموش', desc:'LED نشانگر خاموش می‌شود.' },
+        { label:'ON', name:'LED روشن', desc:'LED نشانگر روشن می‌شود و وضعیت سنسور را نشان می‌دهد.' }
+      ]
+    },
+
+    leds: {
+      tag: 'نشانگر',
+      title: 'LED های وضعیت',
+      short: 'نشانگر وضعیت سنسور',
+      body: '<p>این LED وضعیت سنسور را نشان می‌دهد. معمولاً برای نشان دادن آلارم یا آماده بودن سنسور به کار می‌رود.</p>' +
+            '<p class="jp2-note">در ۱۰ ثانیه اول پس از روشن شدن، سنسور در حالت راه‌اندازی است و LED چشمک می‌زند.</p>'
+    },
+
+    pir: {
+      tag: 'حسگر',
+      title: 'سنسور PIR',
+      short: 'حسگر مادون قرمز دوگانه (Dual PIR)',
+      body: '<p>این بخش، سنسور اصلی تشخیص حرکت است. JET PA2 از تکنولوژی Dual PIR (دو سنسور مادون قرمز) استفاده می‌کند که دقت بالایی در تشخیص حرکت انسان دارد و از آلارم کاذب جلوگیری می‌کند.</p>' +
+            '<ul><li>پوشش پیش‌فرض: الگوی ۹۰ درجه افقی تا شعاع ۱۵ متر</li>' +
+            '<li>ارتفاع نصب پیشنهادی: ۲۲۰ سانتی‌متر از سطح زمین</li>' +
+            '<li>قابلیت آنالیز دقیق حیوانات خانگی تا وزن ۲۵ کیلوگرم</li></ul>'
+    },
+
+    tamperSw: {
+      tag: 'حفاظت',
+      title: 'کلید تامپر',
+      short: 'کلید ضد باز شدن درب بدنه',
+      body: '<p>این کلید مکانیکی روی برد قرار دارد و با بسته شدن درب سنسور فشرده می‌شود. اگر درب بدنه باز شود، مدار تامپر تغییر وضعیت داده و سیگنال هشدار به پنل ارسال می‌شود.</p>' +
+            '<p class="jp2-note">خروجی تامپر از طریق ترمینال TAMPER و با مقاومت EOL قابل انتخاب (جامپر EOL TAMPER) به پنل متصل می‌شود.</p>'
+    },
+
+    pirAdj: {
+      tag: 'تنظیم',
+      title: 'تنظیم حساسیت PIR',
+      short: 'تنظیم حساسیت سنسور PIR',
+      body: '<p>این پتانسیومتر برای تنظیم دقیق حساسیت سنسور PIR به کار می‌رود. با چرخاندن آن، می‌توانید میزان حساسیت را کم یا زیاد کنید.</p>' +
+            '<p class="jp2-note">توجه: تنظیم نادرست این پتانسیومتر می‌تواند موجب بروز مشکل در عملکرد سنسور شود. لذا تغییرات را با احتیاط و به تدریج انجام دهید.</p>',
+      options: [
+        { label:'کم', name:'حساسیت کم', desc:'مناسب محیط‌های کوچک یا دارای منابع گرما و جریان هوا.' },
+        { label:'متوسط', name:'حساسیت متوسط', desc:'حالت متعادل برای اکثر کاربردها. (توصیه شده)' },
+        { label:'زیاد', name:'حساسیت زیاد', desc:'مناسب محیط‌های بزرگ یا نیاز به تشخیص حرکت‌های کوچک.' }
+      ]
+    },
+
+    j1: {
+      tag: 'تنظیم',
+      title: 'جامپر J1 — پالس (IMPULSES)',
+      short: 'تعداد پالس لازم برای صدور آلارم',
+      body: '<p>این جامپر تعیین می‌کند که سنسور با دریافت چند پالس مادون قرمز، آلارم صادر کند. تعداد پالس بیشتر باعث کاهش آلارم کاذب می‌شود اما سرعت پاسخ را کمی کاهش می‌دهد.</p>' +
+            '<p class="jp2-note">طبق دفترچه راهنما، این جامپر دو حالت دارد: ۱ پالس و ۲ پالس.</p>',
+      options: [
+        { label:'1P', name:'یک پالس', desc:'سنسور با دریافت یک پالس آلارم می‌دهد. سریع‌ترین پاسخ، اما حساس‌تر به آلارم کاذب.' },
+        { label:'2P', name:'دو پالس', desc:'سنسور با دریافت دو پالس آلارم می‌دهد. (حالت پیش‌فرض) تعادل مناسب بین سرعت و پایداری.' }
+      ]
+    },
+
+    tempSensor: {
+      tag: 'حسگر',
+      title: 'سنسور جبران دمای محیط',
+      short: 'سنسور کمکی دما',
+      body: '<p>این سنسور برای جبران تغییرات دمای محیط به کار می‌رود و به پایداری عملکرد سنسور PIR در شرایط دمایی مختلف کمک می‌کند.</p>'
+    }
+  };
+
+  function qs(sel, ctx){ return (ctx || svg).querySelector(sel); }
+  function qsa(sel, ctx){ return Array.prototype.slice.call((ctx || svg).querySelectorAll(sel)); }
+
+  function setCapX(sel, base, idx, step){
+    var el = qs(sel);
+    if(el) el.setAttribute('x', base + (idx * step));
+  }
+
+  function setCapY(sel, base, idx, step){
+    var el = qs(sel);
+    if(el) el.setAttribute('y', base + (idx * step));
+  }
+
+  function setKnob(sel, idx, cx, cy){
+    var el = qs(sel);
+    if(!el) return;
+    var angles = [-60, 0, 60];
+    el.setAttribute('transform', 'rotate(' + angles[idx] + ' ' + cx + ' ' + cy + ')');
+  }
+
+  function applyState(){
+    setCapX('.jp2-cap-eolAlarm', 217, state.eolAlarm, 16);
+    setCapX('.jp2-cap-eolTamper', 467, state.eolTamper, 16);
+    setCapY('.jp2-cap-s1', 247, state.s1, 25);
+
+    var ledCap = qs('.jp2-cap-ledJmp');
+    if(ledCap) ledCap.setAttribute('x', 342 + (state.ledJmp * 34));
+
+    setCapY('.jp2-cap-j1', 247, state.j1, 25);
+
+    var petCaps = [qs('.jp2-cap-pet1'), qs('.jp2-cap-pet2'), qs('.jp2-cap-pet3')];
+    petCaps.forEach(function(cap, i){
+      if(cap) cap.setAttribute('x', 201 + (i * 20) + (state.pet * 20));
+    });
+
+    setKnob('.jp2-knob-pirAdj', state.pirAdj, 510, 530);
+  }
+
+  function renderPanel(key){
+    if(!key || !PARTS[key]){
+      panel.innerHTML =
+        '<div class="jp2-empty">' +
+          '<div class="jp2-empty-icon">👆</div>' +
+          '<div class="jp2-empty-t">برای شروع، روی یکی از اجزای برد کلیک کنید</div>' +
+          '<div class="jp2-empty-d">با بردن موس روی هر بخش، توضیح کوتاه آن نمایش داده می‌شود.</div>' +
+        '</div>';
+      return;
+    }
+
+    var p = PARTS[key];
+    var html = '<div class="jp2-p-head">' +
+                 '<div class="jp2-p-tag">' + (p.tag || 'جزء برد') + '</div>' +
+                 '<div class="jp2-p-title">' + p.title + '</div>' +
+               '</div>';
+
+    html += '<div class="jp2-p-body">' + p.body + '</div>';
+
+    if(p.options){
+      html += '<div class="jp2-p-opts-title">انتخاب حالت:</div>';
+      html += '<div class="jp2-p-opts">';
+      for(var i = 0; i < p.options.length; i++){
+        var o = p.options[i];
+        var on = (state[key] === i) ? ' jp2-on' : '';
+        html += '<button type="button" class="jp2-opt' + on + '" data-key="' + key + '" data-i="' + i + '">' +
+                  '<span class="jp2-opt-l">' + o.label + '</span>' +
+                  '<span class="jp2-opt-n">' + o.name + '</span>' +
+                '</button>';
+      }
+      html += '</div>';
+
+      var cur = p.options[state[key]];
+      html += '<div class="jp2-p-cur"><b>حالت فعلی:</b> ' + cur.desc + '</div>';
+    }
+
+    panel.innerHTML = html;
+  }
+
+  function showTipAt(x, y, key){
+    var p = PARTS[key];
+    if(!p) return;
+    tip.innerHTML = '<b>' + p.title + '</b>' + (p.short || '');
+    tip.classList.add('jp2-show');
+
+    tip.style.left = '0px';
+    tip.style.top = '0px';
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    var left = x + 16, top = y + 16;
+    if(left + w > window.innerWidth - 10) left = x - w - 16;
+    if(top + h > window.innerHeight - 10) top = y - h - 16;
+    if(left < 10) left = 10;
+    if(top < 10) top = 10;
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+  }
+
+  function hideTip(){
+    tip.classList.remove('jp2-show');
+  }
+
+  function selectPart(key){
+    currentKey = key;
+    qsa('.jp2-hotspot').forEach(function(el){
+      el.classList.toggle('jp2-active', el.getAttribute('data-part') === key);
+    });
+    renderPanel(key);
+  }
+
+  qsa('.jp2-hotspot').forEach(function(el){
+    var key = el.getAttribute('data-part');
+
+    el.addEventListener('mouseenter', function(e){
+      showTipAt(e.clientX, e.clientY, key);
+    });
+    el.addEventListener('mousemove', function(e){
+      if(tip.classList.contains('jp2-show')) showTipAt(e.clientX, e.clientY, key);
+    });
+    el.addEventListener('mouseleave', hideTip);
+
+    el.addEventListener('click', function(){
+      selectPart(key);
+    });
+
+    el.addEventListener('touchstart', function(e){
+      var t = e.touches[0];
+      showTipAt(t.clientX, t.clientY, key);
+      selectPart(key);
+      clearTimeout(el._jp2Timer);
+      el._jp2Timer = setTimeout(hideTip, 2600);
+    }, { passive: true });
+
+    el.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        selectPart(key);
+      }
+    });
+  });
+
+  panel.addEventListener('click', function(e){
+    var btn = e.target.closest ? e.target.closest('.jp2-opt') : null;
+    if(!btn) return;
+    var key = btn.getAttribute('data-key');
+    var i = parseInt(btn.getAttribute('data-i'), 10);
+    if(state[key] === i) return;
+    state[key] = i;
+    applyState();
+    renderPanel(key);
+  });
+
+  applyState();
+  renderPanel(null);
+})();
+</script>
+</body>
+</html>
